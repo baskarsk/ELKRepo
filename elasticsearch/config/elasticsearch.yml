@@ -14,7 +14,10 @@ ES_JAVA_OPTS: -Xms512m -Xmx512m
 ulimits.nofile.soft: 262144
 ulimits.nofile.hard: 262144
 
- volumes: /usr/share/elasticsearch/data
+volumes: /usr/share/elasticsearch/data
+
+elasticsearch.username: kibana
+elasticsearch.password: kibanapassword
 
 ## Use single node discovery in order to disable production mode and avoid bootstrap checks
 ## see https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
